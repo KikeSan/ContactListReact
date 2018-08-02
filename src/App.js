@@ -1,22 +1,16 @@
 import React, { Component } from 'react'
 import './styles/index.scss'
-import Counter from './containers/Counter'
+// import Counter from './containers/Counter'
+import Contacts from './containers/ContactList';
+import ContactDetail from './containers/ContactDetail';
 
 export default class App extends Component {
-  state = {
-    message: 'Message'
-  }
-
-  handleToggleMessage = (message) => {
-    this.setState({ message })
-  }
-
+  
   render() {
     return (
       <div>
-        <div>
-          <Counter />
-        </div>
+        <Contacts />
+        <ContactDetail />
       </div>
     )
   }

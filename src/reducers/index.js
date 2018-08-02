@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux'
-import counter from './counter'
+import { combineReducers } from 'redux';
+import ContactsReducer from './ContactsReducer';
+import ActiveContactReducer from './reducer_active_contact';
 
 const reducers = combineReducers({
-  counter,
+  contacts: ContactsReducer,
+  activeContact: ActiveContactReducer
 })
 
 export default reducers
